@@ -1,20 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Javascript Internal Script</title>
-<base href="http://www.tutorialspoint.com/" />
-<script type="text/javascript">
-function Hello(){
-   alert("Hello, World  ggfh");
-}
-</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=1200px"> -->
+    <title>Textfeld Vergleich</title>
+    <script>
+        function vergleicheText() {
+            var eingabeWert = document.getElementById("textfeld").value;
+
+            if (eingabeWert.toLowerCase() === "richtig") {
+                document.getElementById("ergebnis").innerHTML = "Hallo du da";
+            } else {
+                document.getElementById("ergebnis").innerHTML = "leider falsch";
+            }
+        }
+        function vergleicheNummer() {
+            var eingabeWert = document.getElementById("nummer").value;
+
+            if (eingabeWert<10 && eingabeWert>0) {
+                document.getElementById("ergebnis").innerHTML = "ricgitg";
+            } else {
+                document.getElementById("ergebnis").innerHTML = "leider falsch";
+            }
+        }
+    </script>
 </head>
 <body>
-<input type="button" onclick="Hello();" name="ok" value="Click Me"  />
-<input type="button" onclick="Hello();" name="ok" value="Click Me"  />
 
-<input type="button" onclick="Hello();" name="ok" value="Click Me"  />
-<input type="button" onclick="Hello();" name="ok" value="Click Me"  />
-<input type="button" onclick="Hello();" name="ok" value="Click Me"  />
+    <label for="textfeld">Text eingeben:</label>
+    <input type="text" id="textfeld">
+
+    <button onclick="vergleicheText()">Vergleichen</button>
+
+    <label for="nummer">Nummer eingeben:</label>
+    <input type="number" id="nummer">
+    <button onclick="vergleicheNummer()">Nummer</button>
+
+    <form action="4">
+      <label for="country_code">Country code:</label>
+      <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"><br><br>
+      <input type="color">
+    </form>
+    
+    <p><strong>Note:</strong> The pattern attribute of the input tag is not supported in Safari 10 (or earlier).</p>
+
+    <div id="ergebnis"></div>
+
 </body>
 </html>
