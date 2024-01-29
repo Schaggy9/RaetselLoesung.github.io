@@ -1,52 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name="viewport" content="width=1200px"> -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Textfeld Vergleich</title>
-    <script>
-        function vergleicheText() {
-            var eingabeWert = document.getElementById("textfeld").value;
+  </head>
 
-            if (eingabeWert.toLowerCase() === "richtig") {
-                document.getElementById("ergebnis").innerHTML = "Hallo du da";
-            } else {
-                document.getElementById("ergebnis").innerHTML = "leider falsch";
-            }
-        }
-        function vergleicheNummer() {
-            var eingabeWert = document.getElementById("nummer").value;
+  <body>
+    <div id="all">
+      <div id="title">
+        <h3>Rätsel Lösungen</h3>
+      </div>
 
-            if (eingabeWert<10 && eingabeWert>0) {
-                document.getElementById("ergebnis").innerHTML = "ricgitg";
-            } else {
-                document.getElementById("ergebnis").innerHTML = "leider falsch";
-            }
-        }
-    </script>
-</head>
-<body>
+      <div id="separation">
+        <span>**********************************************</span>
+      </div>
 
-    <label for="textfeld">Text eingeben:</label>
-    <input type="text" id="textfeld">
+      <div id="coordinates">
+        <div id="coordinates-title">
+          <div id="coordinates-title-image">
+            <img src="./images/Anker.png" alt="anker-icon" />
+          </div>
+          <div id="coordinates-title-text">
+            <h4>GPS-Koordinaten</h4>
+          </div>
+        </div>
+        <div id="coordinates-input">
+          <div id="coordinates-input-fields">
+            <div id="coordinates-input-fields-1">
+              <span>1. Ort: </span>
+              <input type="number" name="text1" id="text1" />
+            </div>
+            <div id="coordinates-input-fields-2">
+              <span>2. Ort: </span>
+              <div id="coordinates-input-fields-2-breite">
+                <span id="span-breite">Breitengrad:</span>
+                <span id="span-breite-zahl">48.</span>
+                <input type="number" name="text2_1" id="text2_1" />
+              </div>
+              <div id="coordinates-input-fields-2-länge">
+                <span id="span-länge">Längengrad:</span>
+                <span id="span-länge-zahl"> 11.</span>
+                <input type="number" name="text2_2" id="text2_2" />
+              </div>
+            </div>
+            <div id="coordinates-input-fields-3">
+              <span>3. Ort: </span>
+              <input type="number" name="text3" id="text3" />
+            </div>
+          </div>
+          <div id="coordinates-input-button">
+            <button id="check-button" onclick="checkGPSCoordinates()">
+              Check
+            </button>
+          </div>
+          <div id="coordinates-input-solution-right">
+            <span
+              >Hurra, du hast es geschafft! Herzlichen Glückwunsch zur
+              erfolgreichen Bewältigung der ersten Herausforderung. Das
+              bedeutet, dass du nun an der aufregenden Expedition mit Captain
+              Nemo in seinem U-Boot teilnehmen kannst. Sobald du das U-Boot
+              betrittst, beginnt das Abenteuer. Es taucht ab in die Tiefen des
+              Meeres, und durch die Fenster kannst du bereits eine Vielzahl
+              faszinierender Meeresbewohner beobachten. <br /><br />
+              Mit Vorfreude offenbart Captain Nemo schließlich das Ziel dieser
+              Reise. Ein altes, versunkenes Schiffswrack liegt an einem noch
+              unbekannten Ort, und er hofft, auf verborgene Schätze an Bord zu
+              stoßen. Als zusätzlichen Anreiz verspricht er, dass derjenige, der
+              den Schatz zuerst findet, ihn behalten darf. Die Spannung steigt –
+              bist du gespannt darauf, ob du diesen Schatz entdecken kannst?
+              <br /><br />
+              Um die Zeit bis zur Ankunft am Wrack zu überbrücken, teilt Captain
+              Nemo seine liebste Zeitvertreibung mit dir: das Lösen von
+              Nonogrammen. Gemeinsam tüftelt ihr an einem, während die
+              Expedition weiter in die Tiefsee voranschreitet. Wer weiß,
+              vielleicht hält dieses Rätsel weitere Hinweise auf den verborgenen
+              Schatz bereit. Sei bereit für die Abenteuer, die in den Tiefen des
+              Ozeans auf dich warten! <br /><br />
 
-    <button onclick="vergleicheText()">Vergleichen</button>
+              Lösungscode: 7743
+            </span>
+          </div>
+          <div id="coordinates-input-solution-false">
+            <span>Leider falsch. Probier es noch einmal. </span>
+          </div>
+        </div>
+      </div>
 
-    <label for="nummer">Nummer eingeben:</label>
-    <input type="number" id="nummer">
-    <button onclick="vergleicheNummer()">Nummer</button>
+      <div id="separation">
+        <span>**********************************************</span>
+      </div>
 
-    <form action="4">
-      <label for="country_code">Country code:</label>
-      <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"><br><br>
-      <input type="color">
-    </form>
-    
-    <p><strong>Note:</strong> The pattern attribute of the input tag is not supported in Safari 10 (or earlier).</p>
+      <div id="logical">
+        <div id="logical-title">
+          <div id="logical-title-image">
+            <img src="./images/Dreizack.png" alt="dreizack-icon" />
+          </div>
+          <div id="logical-title-text">
+            <h4>Fisch ist nicht gleich Fisch!</h4>
+          </div>
+        </div>
 
-    <div id="ergebnis"></div>
+        <div id="logical-input">
+          <div id="logical-input-fields">
+            <div id="logical-input-fields-1">
+              <div id="question">
+                <span>Wie alt ist die Meerjungfrau? </span>
+              </div>
+              <div id="textfield">
+                <input type="number" name="text4" id="text4" />
+              </div>
+            </div>
+            <div id="logical-input-fields-2">
+              <div id="question">
+                <span>Wo ist der Delphin beheimatet?</span>
+              </div>
+              <div id="textfield">
+                <input type="text" name="text5" id="text5" />
+              </div>
+            </div>
+            <div id="logical-input-fields-3">
+              <div id="question">
+                <span>Wo sind Quallen das Lieblingsessen?</span>
+              </div>
+              <div id="textfield">
+                <input type="text" name="text6" id="text6" />
+              </div>
+            </div>
+            <div id="logical-input-fields-4">
+              <div id="question">
+                <span>Wer hat als Lieblingsessen Seegras?</span>
+              </div>
+              <div id="textfield">
+                <input type="text" name="text7" id="text7" />
+              </div>
+            </div>
+            <div id="logical-input-fields-5">
+              <div id="question">
+                <span>Wie alt ist der weiße Hai?</span>
+              </div>
+              <div id="textfield">
+                <input type="number" name="text8" id="text8" />
+              </div>
+            </div>
+          </div>
 
-</body>
+          <div id="logical-input-button">
+            <button id="check-button" onclick="checkLogical()">Check</button>
+          </div>
+
+          <div id="logical-input-solution-right">
+            <span
+              >Hurra, auch das hast du geschafft. Herzlichen Glückwunsch.<br /><br />
+              Du solltest nun alle Rätsel gelöst haben um deine gefundene
+              Schatztruhe aus dem Schiffswrack zu öffnen.
+              <br /><br />
+              Lösungscode: 1335
+            </span>
+          </div>
+
+          <div id="logical-input-solution-false">
+            <span>Leider falsch. Probier es noch einmal. </span>
+          </div>
+        </div>
+      </div>
+
+      <script src="gps.js"></script>
+      <script src="logical.js"></script>
+      <script src="events.js"></script>
+    </div>
+  </body>
 </html>

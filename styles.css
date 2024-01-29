@@ -1,0 +1,322 @@
+@font-face {
+  font-family: "Trickster";
+  src: local("Trickster"), url("font.otf") format("opentype");
+}
+
+* {
+  font-family: "Trickster";
+}
+
+body {
+  background: white url("./images/old-paper.jpeg ") repeat center;
+  background-size: cover;
+}
+h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-top: 8px;
+}
+
+h4 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-top: 8px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /*untereinander*/
+  height: min-content;
+}
+
+#all {
+  display: flex;
+  flex-direction: column; /*untereinander*/
+  /* background-color: rgb(240, 196, 139); */
+  margin: 5px;
+}
+
+#separation {
+  display: flex;
+  justify-content: center;
+  margin: 4px;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  margin: 4px;
+}
+
+/* GPS - Koordinaten */
+
+#coordinates {
+  margin: 4px;
+  /* background-color: rgb(203, 11, 11); */
+}
+
+#coordinates-title {
+  margin-left: 4px;
+  margin-right: 4px;
+  display: flex;
+  height: 2rem;
+  flex-direction: row; /*nebeneinander*/
+  /* background-color: rgb(237, 233, 228); */
+}
+
+#coordinates-title-image {
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+}
+
+#coordinates-title-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+#coordinates-input {
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgb(55, 144, 162); */
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+#coordinates-input-fields {
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgb(108, 155, 164); */
+}
+
+#coordinates-input-fields-1 {
+  display: flex;
+  flex-direction: row;
+  /* background-color: rgb(189, 175, 138); */
+  margin-bottom: 15px;
+}
+
+#coordinates-input-fields-2 {
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgb(116, 138, 110); */
+}
+
+input {
+  background-color: rgba(255, 255, 255, 0.582);
+  border-color: transparent;
+}
+
+#text1 {
+  width: 50%;
+  margin-left: 8px;
+}
+
+#coordinates-input-fields-2-breite {
+  display: flex;
+  flex-direction: row;
+  /* background-color: rgb(101, 74, 96); */
+  margin-left: 5px;
+}
+
+#span-breite {
+  width: 100px;
+}
+
+#span-breite-zahl {
+  width: 20px;
+}
+
+#coordinates-input-fields-2-länge {
+  display: flex;
+  flex-direction: row;
+  /* background-color: rgb(220, 128, 203); */
+  margin-left: 5px;
+  margin-top: 1px;
+}
+
+#span-länge {
+  width: 100px;
+}
+
+#span-länge-zahl {
+  width: 20px;
+}
+
+#text2_1 {
+  width: 30%;
+}
+
+#text2_2 {
+  width: 30%;
+}
+
+#coordinates-input-fields-3 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+#coordinates-input-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* background-color: rgb(152, 158, 159); */
+  margin-top: 10px;
+}
+
+#text3 {
+  width: 50%;
+  margin-left: 8px;
+}
+
+#check-button {
+  width: 250px;
+  height: 35px;
+  background-color: rgba(179, 147, 108, 0.555);
+  border: 1px solid rgb(179, 147, 108);
+}
+
+#check-button:hover {
+  background-color: rgba(116, 94, 67, 0.632);
+}
+
+#coordinates-input-solution-right {
+  margin-top: 15px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+#coordinates-input-solution-false {
+  margin-top: 15px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+/* Logical */
+
+#logical {
+  margin: 4px;
+}
+
+#logical-title {
+  margin-left: 4px;
+  margin-right: 4px;
+  display: flex;
+  height: 2rem;
+  flex-direction: row;
+}
+
+#logical-title-image {
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+}
+
+#logical-title-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+#logical-input {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+#logical-input-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+#logical-input-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#logical-input-solution-right {
+  margin-top: 15px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+#logical-input-solution-false {
+  margin-top: 15px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+#logical-input-fields-1 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+#logical-input-fields-2 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+#logical-input-fields-3 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+#logical-input-fields-4 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+#logical-input-fields-5 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+#question {
+  width: 50%;
+}
+
+#textfield {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#text4 {
+  height: max-content;
+}
+
+#text5 {
+  height: max-content;
+}
+
+#text6 {
+  height: max-content;
+}
+
+#text7 {
+  height: max-content;
+}
+
+#text8 {
+  height: max-content;
+}
