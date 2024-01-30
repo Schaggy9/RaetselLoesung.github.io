@@ -10,6 +10,8 @@
 body {
   background: white url("./images/old-paper.jpeg ") repeat center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
 }
 h3 {
   margin-block-start: 0;
@@ -34,6 +36,7 @@ h4 {
   flex-direction: column; /*untereinander*/
   /* background-color: rgb(240, 196, 139); */
   margin: 5px;
+  max-width: 800px;
 }
 
 #separation {
