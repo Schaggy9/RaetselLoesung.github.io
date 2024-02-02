@@ -1,9 +1,9 @@
 function checkLogical() {
-  //   document.getElementById("text4").value = "30";
-  //   document.getElementById("text5").value = "Mittelmeer";
-  //   document.getElementById("text6").value = "Pazifik";
-  //   document.getElementById("text7").value = "Schildkröte";
-  //   document.getElementById("text8").value = "5";
+  // document.getElementById("text4").value = "30";
+  // document.getElementById("text5").value = "Mittelmeer";
+  // document.getElementById("text6").value = "Pazifik";
+  // document.getElementById("text7").value = "Schildkröte";
+  // document.getElementById("text8").value = "5";
 
   var eingabe4 = document.getElementById("text4").value;
   var eingabe5 = document.getElementById("text5").value;

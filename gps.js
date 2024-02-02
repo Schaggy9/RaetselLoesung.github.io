@@ -2,7 +2,7 @@ function checkGPSCoordinates() {
   // document.getElementById("text1").value = "0893106177";
   // document.getElementById("text2_1").value = "28218";
   // document.getElementById("text2_2").value = "56342";
-  // document.getElementById("text3").value = "179";
+  // document.getElementById("text3").value = "178";
 
   var eingabe_Ort_1 = document.getElementById("text1").value;
   var eingabe_Ort_2_1 = document.getElementById("text2_1").value;
@@ -42,7 +42,7 @@ function checkOrt1(wert) {
 }
 
 function checkOrt2_1(wert) {
-  if (wert >= 28218 && wert <= 28418) {
+  if (wert >= 283090 && wert <= 283290) {
     return true;
   }
   document.getElementById("text2_1").style.borderColor = "red";
@@ -50,7 +50,7 @@ function checkOrt2_1(wert) {
 }
 
 function checkOrt2_2(wert) {
-  if (wert >= 56342 && wert <= 56542) {
+  if (wert >= 564343 && wert <= 564443) {
     return true;
   }
   document.getElementById("text2_2").style.borderColor = "red";
@@ -58,7 +58,7 @@ function checkOrt2_2(wert) {
 }
 
 function checkOrt3(wert) {
-  if (wert === "179") {
+  if (wert === "178") {
     return true;
   }
   document.getElementById("text3").style.borderColor = "red";
